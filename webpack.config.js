@@ -9,6 +9,7 @@
 // };
 var webpack = require('webpack');
 var path = require('path');
+var autoprefixer = require('autoprefixer')
 
 var publicPath = 'http://localhost:3000/';
 var hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
@@ -26,12 +27,32 @@ var devConfig = {
     module: {
         loaders: [{
             test: /\.(png|jpg)$/,
-            loader: 'url?limit=8192&context=client&name=[path][name].[ext]'
+            loader: 'url?limit=8192&context=public&name=[path][name].[ext]'
         }, {
-            test: /\.scss$/,
-            loader: 'style!css?sourceMap!resolve-url!sass?sourceMap'
-        }]
+            test: /\.js$/,
+            exclude: /(node_modules|bower_components)/,
+            loader: 'babel-loader'
+        }, {
+            test: /\.css$/,
+            loader: 'style-loader!css-loader'
+        },
+        ],
+        resolve: {
+              extensions: ['', '.js', '.jsx', '.css']
+          }
     },
+    postcss: function() {
+        return [
+          autoprefixer({
+            browsers: [
+              '>1%',
+              'last 4 versions',
+              'Firefox ESR',
+              'not ie < 9', // React doesn't support IE8 anyway
+            ]
+          }),
+        ];
+   },
     plugins: [
         // new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),

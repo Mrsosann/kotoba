@@ -1,8 +1,27 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import '~antd/dist/antd.css';
+.wode-nav {
+	/*width: 80%;
+	margin: 0 auto;*/
+	padding: 0 10%;
+	background-color: rgba(64, 64, 64, .3);
+	border-bottom: 1px solid rgba(64, 64, 64, .3) !important;
+	font-size: 1.3em;
+}
+.wode-nav-right {
+	float: right !important;
 }
 
-a {
-  color: #00B7FF;
+.wode-input {
+	width: 50%;
+	margin: 50px auto;
+	display: block;
+}
+
+.wode-footer-copyright {
+	width: 100%;
+	padding: 20px 0 25px;
+  text-align: center;
+  color: #f2dede;
+  position: absolute;
+  bottom: 10px;
 }
