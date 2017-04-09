@@ -13,5 +13,25 @@
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2"
-  }
+  },
+  "description": "基于node+mongodb+react+express+视频语料库的在线日中词典",
+  "main": "app.js",
+  "devDependencies": {
+    "consolidate": "^0.14.5",
+    "ejs": "^2.5.6",
+    "webpack": "^2.3.3",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrsosann/kotoba.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mrsosann/kotoba/issues"
+  },
+  "homepage": "https://github.com/Mrsosann/kotoba#readme"
 }
