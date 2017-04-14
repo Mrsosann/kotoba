@@ -11,17 +11,49 @@
 	float: right !important;
 }
 
-.wode-input {
+.wode-content-input {
 	width: 50%;
-	margin: 50px auto;
+	margin: 200px auto;
 	display: block;
 }
 
+.wode-video-message {
+	padding: 10px 16px;
+	text-align: center;
+	overflow: hidden;
+}
+.wode-result-left {
+	margin-left: 5%;
+	float: left;
+	width: 300px;
+	margin-right: 20%;
+}
+.wode-result-right {
+	float: left;
+}
+
+.wode-list-content {
+	overflow: hidden;
+}
+.wode-listCard {
+	float: left;
+	margin-left: 3%;
+	width: 30%;
+	/*margin-top: 20px;*/
+}
+.wode-br-div {
+	float: left;
+	display: block;
+	width: 100%;
+	height: 30px;
+	/*background-color: #ddd;*/
+}
+
 .wode-footer-copyright {
+	margin-top: 20px;
 	width: 100%;
 	padding: 20px 0 25px;
   text-align: center;
   color: #f2dede;
-  position: absolute;
-  bottom: 10px;
+  clear: both;
 }
